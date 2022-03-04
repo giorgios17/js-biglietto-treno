@@ -14,16 +14,20 @@ const age = prompt('Quanti anni hai?')
 
 let ticketPrice = (travelKm * priceKm);
 
+
 if (age < 18) {
     ticketPrice = ticketPrice - (ticketPrice * discountMinor / 100);
-    console.log('Il biglietto costa', ticketPrice, '€')
+    let ticketPriceTotal = ticketPrice.toFixed(2)
+    console.log('Il biglietto costa', ticketPriceTotal, '€')
 }
 else if (age >= 65) {
     ticketPrice = ticketPrice - (ticketPrice * discountOver65 / 100);
-    console.log('Il biglietto costa', ticketPrice, '€')
+    let ticketPriceTotal = ticketPrice.toFixed(2)
+    console.log('Il biglietto costa', ticketPriceTotal, '€')
 }
 else {
-    console.log('Il biglietto costa', ticketPrice, '€')
+    let ticketPriceTotal = ticketPrice.toFixed(2)
+    console.log('Il biglietto costa', ticketPriceTotal, '€')
 }
 
 
